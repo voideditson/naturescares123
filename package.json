@@ -1,0 +1,19 @@
+{
+  "name": "disaster-zone",
+  "version": "1.0.0",
+  "description": "Multiplayer natural disaster survival game",
+  "type": "module",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "three": "0.160.0",
+    "ws": "^8.18.0"
+  }
+}

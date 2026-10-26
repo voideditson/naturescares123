@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Disaster Zone</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{ "imports": { "three": "/vendor/three/three.module.js" } }
+</script>
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<div id="tint"></div>
+<div id="vignette"></div>
+<div id="flash"></div>
+
+<div id="banner"><div id="bannerMain">Connecting...</div><div id="bannerSub"></div></div>
+<div id="alert"><div id="alertName"></div><div id="alertBlurb"></div></div>
+<div id="board"></div>
+<div id="feed"></div>
+<div id="spec"></div>
+<div id="hint">WASD move &middot; Space jump &middot; Shift sprint &middot; Mouse look &middot; Enter chat &middot; M mute</div>
+
+<div id="hpwrap"><div id="hpfill"></div><div id="hptext">100</div></div>
+<input id="chatInput" maxlength="120" placeholder="Say something..." autocomplete="off">
+
+<div id="join">
+  <div class="card">
+    <h1>DISASTER ZONE</h1>
+    <p>Survive random disasters on random maps. Last one standing scores big.</p>
+    <input id="nameInput" maxlength="16" placeholder="Your name" autocomplete="off">
+    <button id="playBtn">Play</button>
+    <small>10 disasters &middot; 5 maps &middot; picked at random every round</small>
+  </div>
+</div>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
